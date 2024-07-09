@@ -1,10 +1,11 @@
 import './App.css'
 
-import { UseReducer } from './assets/components/UseReducer';
-import {UseRef} from './assets/components/UseRef';
-import {UseMemo} from './assets/components/UseMemo';
+import { UseReducer } from './components/UseReducer';
+import {UseRef} from './components/UseRef';
+import {UseMemo} from './components/UseMemo';
+import { useEffect, useState } from 'react';
 
-function App() {
+export  function App() {
   const [count, setCount] = useState(0)
 
   // useEffect se ejecuta después de cada renderizado
